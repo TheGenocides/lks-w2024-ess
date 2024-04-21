@@ -11,3 +11,7 @@ C++ file for ESP32 with Sensor
 ## AWS-IOT-Rand
 
 C++ file for ESP32 without Sensor, generates random number to be sent to AWS IoT Core
+
+## Wiring System
+
+Ignore the Relay, connect the Soil Moisture sensor directly to ESP32
