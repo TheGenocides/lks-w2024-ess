@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     if humid < base_humid:
         sns.publish(
             TargetArn='Enter topic ARN here',
-            Message='Humidity reached below base humid at ' + timestamp
+            Message='Humidity reached below base humid from nama / sekolah at ' + timestamp
         )
         
     table.put_item(
