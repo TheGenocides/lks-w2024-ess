@@ -1,3 +1,4 @@
+import datetime
 import boto3
 
 dynamodb = boto3.resource('dynamodb')
@@ -5,11 +6,11 @@ sns = boto3.client('sns')
 
 def lambda_handler(event, context):
     
-    timestamp = str(event['timestamp'])
+    timestamp = str(datetime.datetime.now())
     humid = int(event['humid'])
     base_humid = int(event['base_humid'])
     
-    table = dynamodb.Table('sensor')
+    table = dynamodb.Table('Enter Table Name')
     
     if humid < base_humid:
         sns.publish(
