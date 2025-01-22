@@ -1,8 +1,7 @@
-# Essential Files for LKS Wilayah 2024 Practice Module
+# Essential Files for LKS Wilayah 2025 Practice Module
 
 ## Lambda
-
-Python function to be deployed to AWS, it reads data from AWS IoT Core and store it to AWS DynamoDB, if it receive an anomaly, it will send an email message to the SNS arn, 
+Python function to be deployed to AWS, **it reads** data from AWS IoT Core and store it to AWS DynamoDB, if it receive an anomaly, it will send an email message to the SNS arn, 
 
 ## AWS-IOT
 
